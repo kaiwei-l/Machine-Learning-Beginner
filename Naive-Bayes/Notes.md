@@ -1,3 +1,3 @@
 ### Bayesian decision theory
 
-  Choosing the decision with the highest probability
+*In a nutshell, it means choosing the decision with the highest probability
