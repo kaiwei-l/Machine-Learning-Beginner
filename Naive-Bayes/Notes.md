@@ -7,3 +7,7 @@
 ### Bayes' rule (To manipulate conditional probabilities)
 
 * p(c|x) = [p(x|c) * p(c)] / p(x)
+
+### Classifying with conditional probabilities
+
+* What we really need to compare is $p(c_{1}|x, y)$ and $p(c_{2}|x, y)$
