@@ -7,4 +7,4 @@
 ### Bayes' rule (To manipulate conditional probabilities)
 
 * p(c|x) = [p(x|c) * p(c)] / p(x)
-* \alpha
+* $\alpha$
