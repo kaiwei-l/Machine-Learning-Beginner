@@ -19,4 +19,4 @@
 
 ### Classifying text with Python
 * Token
- * A token is any combination of characters. You can think of tokens as words, but we may use things that are not words such as URLs. We will reduce every piece of text to a vector of tokens where 1 represents the token existing in the document and 0 represents that it is not present 
+  * A token is any combination of characters. You can think of tokens as words, but we may use things that are not words such as URLs. We will reduce every piece of text to a vector of tokens where 1 represents the token existing in the document and 0 represents that it is not present 
