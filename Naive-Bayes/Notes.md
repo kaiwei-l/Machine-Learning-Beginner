@@ -7,3 +7,10 @@
 ### Bayes' rule (To manipulate conditional probabilities)
 
 * p(c|x) = [p(x|c) * p(c)] / p(x)
+
+```python
+a = 3
+b = 2
+if a == b:
+  print(True)
+```
