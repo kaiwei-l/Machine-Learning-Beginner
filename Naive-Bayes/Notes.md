@@ -14,7 +14,7 @@
   * If $p(c_{1}|x, y) > p(c_{2}|x, y)$, then the class is $c_{1}$
   * If $p(c_{1}|x, y) < p(c_{2}|x, y)$, then the class is $c_{2}$
   * Alternative form
-    * $p(c_{i}|**w**) = $ and note that **w** means it is a vector
+    * $p(c_{i}|w) = $ and note that **w** means it is a vector
 
 ### Assumptions we made when using naive bayes
 * Each features are independent
