@@ -28,6 +28,7 @@
   for every training document:
       for each class:
           if a token appears in the document -> increment the count for that token
+          increment the count for tokens
       for each class:
           for each token:
               divide the token count by the total token count to get conditional probabilities
