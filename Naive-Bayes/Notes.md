@@ -13,6 +13,8 @@
 * The problem is that the equation from our friend is $p(x, y|c_{1})$, which is not the same. But we can use Bayes' rule to switch things around, i.e. $p(c_{i}|x, y) = \frac{p(x, y|c_{i})p(c_{i})}{p(x, y)}$. With these definitions, we can define the Bayesian classification rule: 
   * If $p(c_{1}|x, y) > p(c_{2}|x, y)$, then the class is $c_{1}$
   * If $p(c_{1}|x, y) < p(c_{2}|x, y)$, then the class is $c_{2}$
+  * Alternative form
+    * $p(c_{i}|**w**) = \frac{p(**w**|c_{i})p(c_{i})}{p(**w**)}$ and note that **w** means it is a vector
 
 ### Assumptions we made when using naive bayes
 * Each features are independent
