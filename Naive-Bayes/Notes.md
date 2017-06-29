@@ -4,6 +4,7 @@
 * If p2(x, y) > p1(x, y), then the class is 2
 
 ### Bayes' rule (To manipulate conditional probabilities)
+* $p(c|x) = \frac{p(x|c)p(c)}{p(x)}$
 * p(c|x) = [p(x|c) * p(c)] / p(x)
 
 ### Classifying with conditional probabilities
