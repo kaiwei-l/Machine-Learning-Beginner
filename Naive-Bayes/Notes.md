@@ -21,3 +21,15 @@
 ### Classifying text with Python
 * Token
   * A token is any combination of characters. You can think of tokens as words, but we may use things that are not words such as URLs. We will reduce every piece of text to a vector of tokens where 1 represents the token existing in the document and 0 represents that it is not present 
+
+### Naive Bayes classifier training function (Pseudocode)
+  ```
+  Count the number of documents in each class
+  for every training document:
+      for each class:
+          if a token appears in the document -> increment the count for that token
+      for each class:
+          for each token:
+              divide the token count by the total token count to get conditional probabilities
+      return conditional probabilities for each class
+  ```
