@@ -5,7 +5,7 @@
 
 ### Bayes' rule (To manipulate conditional probabilities)
 * $p(c|x) = \frac{p(x|c)p(c)}{p(x)}$
-* p(c|x) = [p(x|c) * p(c)] / p(x)
+  * Probability of observing event c given that event x is true
 
 ### Classifying with conditional probabilities
 * What we really need to compare is $p(c_{1}|x, y)$ and $p(c_{2}|x, y)$
