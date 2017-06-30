@@ -35,10 +35,11 @@ def trainNB0(trainMatrix, trainCategory):
     numTrainDocs = len(trainMatrix)
     numWords = len(trainMatrix[0])
     pAbusive = sum(trainCategory) / float(numTrainDocs)
-    p0Num = numpy.zeros(numWords)
-    p1Num = numpy.zeros(numWords)
-    p0Denom = 0.0
-    p1Denom = 0.0
+    # num: numerator & denom: denominator
+    p0Num = numpy.ones(numWords)
+    p1Num = numpy.ones(numWords)
+    p0Denom = 2.0
+    p1Denom = 2.0
     for i in range(numTrainDocs):
         if trainCategory[i] == 1:
             p1Num += trainMatrix[i]
@@ -46,6 +47,6 @@ def trainNB0(trainMatrix, trainCategory):
         else:
             p0Num += trainMatrix[i]
             p0Denom += sum(trainMatrix[i])
-    p1Vect = p1Num / p1Denom
-    p0Vect = p0Num / p0Denom
+    p1Vect = numpy.log10(p1Num / p1Denom)
+    p0Vect = numpy.log10(p0Num / p0Denom)
     return p0Vect, p1Vect, pAbusive
