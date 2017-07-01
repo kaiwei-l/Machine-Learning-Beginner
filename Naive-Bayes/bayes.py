@@ -35,7 +35,7 @@ def trainNB0(trainMatrix, trainCategory):
     numTrainDocs = len(trainMatrix)
     numWords = len(trainMatrix[0])
     pAbusive = sum(trainCategory) / float(numTrainDocs)
-    # num: numerator & denom: denominator
+    # num: numerator & denom: denominator & note that numerator / denominator
     p0Num = numpy.ones(numWords)
     p1Num = numpy.ones(numWords)
     p0Denom = 2.0
@@ -67,10 +67,13 @@ def testingNB():
     trainMat = []
     for postingDoc in listOPosts:
         trainMat.append(setOfWords2Vec(myVocabList, postingDoc))
-        p0V, p1V, pAb = trainNB0(numpy.array(trainMat), numpy.array(listClasses))
-        testEntry = ['love', 'my', 'dalmation']
-        thisDoc = numpy.array(setOfWords2Vec(myVocabList, testEntry))
-        print(testEntry, 'classified as: ', classifyNB(thisDoc, p0V, p1V, pAb))
-        testEntry = ['stupid', 'garbage']
-        thisDoc = numpy.array(setOfWords2Vec(myVocabList, testEntry))
-        print(testEntry, 'classified as: ', classifyNB(thisDoc, p0V, p1V, pAb))
+
+    p0V, p1V, pAb = trainNB0(numpy.array(trainMat), numpy.array(listClasses))
+    testEntry = ['love', 'my', 'dalmation']
+    thisDoc = numpy.array(setOfWords2Vec(myVocabList, testEntry))
+    print(testEntry, 'classified as: ', classifyNB(thisDoc, p0V, p1V, pAb))
+    testEntry = ['stupid', 'garbage']
+    thisDoc = numpy.array(setOfWords2Vec(myVocabList, testEntry))
+    print(testEntry, 'classified as: ', classifyNB(thisDoc, p0V, p1V, pAb))
+
+testingNB()
