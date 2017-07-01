@@ -36,3 +36,9 @@
               divide the token count by the total token count to get conditional probabilities
       return conditional probabilities for each class
   ```
+
+### Modifying the classifier for real-world conditions
+* $ln(a * b) = ln(a) + ln(b)$
+  * We do this to avoid underflow problem
+* How can we get $p(\mathbf{w}|c_{i})$?
+  * If we expand **w** into individual features, we could write this as $p(w_{0}, w_{1}, w_{2}...w_{N}|c_{i})$. Our assumption that all the words were independently likely, and something called conditional independence, says we can calculate this probability as $p(w_{0}|c_{i})*p(w_{1}|c_{i})*...*p(w_{N}|c_{i})$
