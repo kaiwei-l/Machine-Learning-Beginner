@@ -31,6 +31,14 @@ def setOfWords2Vec(vocabList, inputSet):
     return returnVec
 
 
+def bagOfWords2VecMN(vocabList, inputSet):
+    returnVec = [0] * len(vocabList)
+    for word in inputSet:
+        if word in vocabList:
+            returnVec[vocabList.index(word)] += 1
+    return returnVec
+
+
 def trainNB0(trainMatrix, trainCategory):
     numTrainDocs = len(trainMatrix)
     numWords = len(trainMatrix[0])
@@ -47,6 +55,7 @@ def trainNB0(trainMatrix, trainCategory):
         else:
             p0Num += trainMatrix[i]
             p0Denom += sum(trainMatrix[i])
+    # p1Vect: p(w|c1) & p0Vect: p(w|c0)
     p1Vect = numpy.log10(p1Num / p1Denom)
     p0Vect = numpy.log10(p0Num / p0Denom)
     return p0Vect, p1Vect, pAbusive
