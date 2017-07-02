@@ -6,3 +6,5 @@
   * If we want to find the maximum point on a function, then the best way to move is in the direction of the gradient
 * Formula
   * $\nabla f(x, y) = \begin{matrix} \frac{\partial f(x, y)}{\partial x} \\\ \frac{\partial f(x, y)}{\partial y} \end{matrix}$
+* Gradient ascent algorithm
+ * a
