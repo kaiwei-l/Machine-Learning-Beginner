@@ -3,7 +3,9 @@
 
 ### Gradient ascent
 * Definition
-  * If we want to find the maximum point on a function, then the best way to move is in the direction of the gradient
+  * If we want to find the maximum point on a function, then the best way to move is in the direction of the gradient. In other words, gradient ascent algorithm helps us minimize the error between actual and predicted values. (Linear Algebra: Best-fit line)
+* Terminology
+  * Weights: Coefficients of our function
 * Formula
   * $\nabla f(x, y) = \begin{matrix} \frac{\partial f(x, y)}{\partial x} \\\ \frac{\partial f(x, y)}{\partial y} \end{matrix}$
 * Gradient ascent algorithm
