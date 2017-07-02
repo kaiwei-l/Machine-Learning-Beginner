@@ -12,9 +12,9 @@
 ### Using gradient ascent to find the best parameters
 * Pseudocode
   * ```
-   Start with the weights all set to 1
-   Repeat R number of times:
+    Start with the weights all set to 1
+    Repeat R number of times:
        Calculate the gradient of the entire dataset
        Update the weights vector by alpha * gradient
        Return the weights vector
-   ```
+    ```
