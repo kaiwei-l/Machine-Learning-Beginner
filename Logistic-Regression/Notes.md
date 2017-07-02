@@ -5,4 +5,4 @@
 * Definition
   * If we want to find the maximum point on a function, then the best way to move is in the direction of the gradient
 * Formula
-  * $\begin{matrix} a\\b end{matrix}$
+  * $\nabla f(x, y) = \begin{bmatrix} a\\b end{bmatrix}$
