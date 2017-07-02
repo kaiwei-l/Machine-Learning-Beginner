@@ -8,3 +8,13 @@
   * $\nabla f(x, y) = \begin{matrix} \frac{\partial f(x, y)}{\partial x} \\\ \frac{\partial f(x, y)}{\partial y} \end{matrix}$
 * Gradient ascent algorithm
   * $\mathbf{w} := \mathbf{w} + \alpha \nabla \mathbf{w}f(\mathbf{w})$
+
+### Using gradient ascent to find the best parameters
+* Pseudocode
+ * ```
+   Start with the weights all set to 1
+   Repeat R number of times:
+       Calculate the gradient of the entire dataset
+       Update the weights vector by alpha * gradient
+       Return the weights vector
+   ```
