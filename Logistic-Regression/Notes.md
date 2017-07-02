@@ -3,8 +3,8 @@
 
 ### Gradient ascent
 * Definition
- * If we want to find the maximum point on a function, then the best way to move is in the direction of the gradient
+  * If we want to find the maximum point on a function, then the best way to move is in the direction of the gradient
 * Formula
   * $\nabla f(x, y) = \begin{matrix} \frac{\partial f(x, y)}{\partial x} \\\ \frac{\partial f(x, y)}{\partial y} \end{matrix}$
 * Gradient ascent algorithm
- * a
+  * $\mathbf{w} := \mathbf{w} + \alpha \nabla \mathbf{w}f(\mathbf{w})$
