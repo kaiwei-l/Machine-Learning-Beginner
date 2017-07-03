@@ -23,3 +23,5 @@
 
 
 ### Stochastic gradient ascent
+* Definition
+ * a
