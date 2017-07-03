@@ -21,4 +21,5 @@
        Return the weights vector
     ```
 
+
 ### Stochastic gradient ascent
