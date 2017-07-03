@@ -32,5 +32,5 @@
         Calculate the gradient of one piece of data
         Update the weights vector by alpha * gradient
         Return the weights vector
-   ```
+     ```
 
