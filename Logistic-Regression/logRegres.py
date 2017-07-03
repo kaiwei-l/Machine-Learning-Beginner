@@ -19,6 +19,7 @@ def sigmoid(inX):
 def gradAscent(dataMatIn, classLabels):
     dataMatrix = mat(dataMatIn)
     labelMat = mat(classLabels).transpose()
+    # shape: getting dimension
     m, n = shape(dataMatrix)
     alpha = 0.001
     maxCycle = 500
@@ -27,4 +28,15 @@ def gradAscent(dataMatIn, classLabels):
         h = sigmoid(dataMatrix * weights)
         error = (labelMat - h)
         weights += alpha * dataMatrix.transpose() * error
+    return weights
+
+
+def stocGradAscent0(dataMatrix, classLabels):
+    m, n = shape(dataMatrix)
+    alpha = 0.01
+    weights = ones(n)
+    for i in range(m):
+        h = sigmoid(sum(dataMatrix[i] * weights))
+        error = classLabels[i] - h
+        weights += alpha * error * dataMatrix[i]
     return weights
