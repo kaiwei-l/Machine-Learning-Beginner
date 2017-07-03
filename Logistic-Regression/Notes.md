@@ -33,4 +33,8 @@
         Update the weights vector by alpha * gradient
         Return the weights vector
      ```
+* Optimization
+  * Changes alpha on each iteration, which will improve the oscillations that occur in the dataset or high-frequency oscillations
+  * Randomly selecting each instance to use in updating the weights. This will reduce the periodic vatiations
+
 
