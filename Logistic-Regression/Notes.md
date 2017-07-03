@@ -24,4 +24,13 @@
 
 ### Stochastic gradient ascent
 * Definition
- * a
+  * Because previous optimization algorithm needs too many calculations, we need a better algorithm. Stochastic gradient ascent algorithm updates the weights using only one instance at a time. This is because stochastic gradient ascent is an example of online laerning algorithm, i.e. we can incrementally update the classifier as new data comes in rather than all at once.
+* Pseudocode
+  * ```
+    Start with the weights all set to 1
+    For each piece of data in the dataset:
+        Calculate the gradient of one piece of data
+        Update the weights vector by alpha * gradient
+        Return the weights vector
+   ```
+
