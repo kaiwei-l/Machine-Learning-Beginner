@@ -1,6 +1,8 @@
 ### Some Terminologies
 * Decision Stump
   * Single-node decision tree
+  * Makes a decision on one feature only
+  * It is a tree with only one split
 
 ### Meta-Algorithms/ Ensemble methods
 * Definition
