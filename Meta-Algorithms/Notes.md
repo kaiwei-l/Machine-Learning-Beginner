@@ -16,3 +16,6 @@
 * Definition about boosting
   * In boosting, the different classifiers are trained sequentially. Each new classifier is trained based on the performance of those already trained. Boosting makes new classifiers focus on data that was previously misclassified by previous classifiers.  
   The output is calculated from a weighted sum of all classifiers.
+
+* Theory
+  * Initially, we need a week classifier. A weight is applied to every example in the training dataset.(***Weight vector D***). 
