@@ -1,7 +1,6 @@
-### Boosting
-* Terminologies
-  * Decision Stump
-    * Single-node decision tree
+### Some Terminologies
+* Decision Stump
+  * Single-node decision tree
 
 ### Meta-Algorithms/ Ensemble methods
 * Definition
