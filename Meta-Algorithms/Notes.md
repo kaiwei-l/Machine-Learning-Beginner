@@ -2,7 +2,6 @@
 * Terminologies
   * Decision Stump
     * Single-node decision tree
-      * asasa
 
 ### Meta-Algorithms/ Ensemble methods
 * Definition
