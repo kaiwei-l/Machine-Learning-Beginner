@@ -23,4 +23,4 @@
   * Error
     * $\varepsilon = \frac{number of incorrectly classified examples}{total number of examples}$
   * Alpha
-    * $\alpha = frac{1}{2} \ln{\frac{1 - \varepsilon}{\varepsilon}}$
+    * $\alpha = \frac{1}{2}\ln{(\frac{1 - \varepsilon}{\varepsilon})}$
