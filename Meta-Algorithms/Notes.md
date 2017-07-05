@@ -2,6 +2,7 @@
 * Terminologies
   * Decision Stump
     * Single-node decision tree
+     *
 
 ### Meta-Algorithms/ Ensemble methods
 * Definition
