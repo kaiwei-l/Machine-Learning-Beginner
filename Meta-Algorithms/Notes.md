@@ -11,3 +11,5 @@
 * Bagging/ Bootstrap aggregating
   * The data is taken from the original dataset S times to make S new datasets. The datasets are the same size as the original. Each dataset is built by randomly selecting an example from the original with replacement.  
   After the S datasets are built, a learning algorithm is applied to each one individually
+
+### Boosting
