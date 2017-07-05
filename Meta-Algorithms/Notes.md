@@ -26,7 +26,7 @@
     * $\alpha = \frac{1}{2}\ln{(\frac{1 - \varepsilon}{\varepsilon})}$
   * Updating weight vector D
     * Correctly predicted
-      * $D_{i}^{t + 1} = \frac{D_{i}^{(t)}e^(- \alpha)}{Sum(D)}$
+      * $D_{i}^{t + 1} = \frac{D_{i}^{(t)}e^{- \alpha}}{Sum(D)}$
     * Incorrectly predicted
       * $D_{i}^{t + 1} = \frac{D_{i}^{(t)}e^{\alpha}}{Sum(D)}$
   
