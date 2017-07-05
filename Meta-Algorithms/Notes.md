@@ -12,5 +12,5 @@
 * Bagging/ Bootstrap aggregating
   * 
 
-As a new man, I would certainly suggest that we should do something good or even worse.  
+As a new man, I would certainly suggest that we should do something good or even worse.
 As an another man
