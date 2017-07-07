@@ -31,8 +31,8 @@
       * $D_{i}^{t + 1} = \frac{D_{i}^{(t)}e^{- \alpha}}{Sum(D)}$
     * Incorrectly predicted
       * $D_{i}^{t + 1} = \frac{D_{i}^{(t)}e^{\alpha}}{Sum(D)}$
- * Pseudocode
-  *  
+
+* Pseudocode
   ```
   For each iteration:
       Find the best stump using buildStump()
