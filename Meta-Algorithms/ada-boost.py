@@ -48,3 +48,6 @@ def buildStump(dataArr, classLabels, D):
                     bestStump['thresh'] = threshVal
                     bestStump['ineq'] = inequal
     return bestStump, minError, bestClasEst
+
+
+def adaBoostTrainDS(dataArr, classLabels, numIt=40):
