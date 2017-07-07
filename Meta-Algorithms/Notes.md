@@ -31,5 +31,18 @@
       * $D_{i}^{t + 1} = \frac{D_{i}^{(t)}e^{- \alpha}}{Sum(D)}$
     * Incorrectly predicted
       * $D_{i}^{t + 1} = \frac{D_{i}^{(t)}e^{\alpha}}{Sum(D)}$
-  
+ * Pseudocode
+  *  
+  ```
+  For each iteration:
+      Find the best stump using buildStump()
+      Add the best stump to the stump array
+      Calculate alpha
+      Calculate the new weight vector D
+      Update the aggregate class estimate
+      If the error rate == 0.0:
+          break out of the for loop
+  ```
+
+
  
