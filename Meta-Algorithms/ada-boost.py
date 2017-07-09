@@ -51,6 +51,7 @@ def buildStump(dataArr, classLabels, D):
 
 
 def adaBoostTrainDS(dataArr, classLabels, numIt=40):
+    """AdaBoost training with decision stumps"""
     weakClassArr = []
     m = shape(dataArr)[0]
     D = mat(ones(m, 1) / m)
@@ -73,3 +74,15 @@ def adaBoostTrainDS(dataArr, classLabels, numIt=40):
         if errorRate == 0.0:
             break
     return weakClassArr
+
+
+def adaClassify(datToClass, classifierArr):
+    dataMatrix = mat(datToClass)
+    m = shape(dataMatrix)[0]
+    aggClassEst = mat(zeros((m, 1)))
+    for i in range(len(classifierArr)):
+        classEst = stumpClassify(dataMatrix, classifierArr[i]['dim'], classifierArr[i]['thresh'],
+                                 classifierArr[i]['ineq'])
+        aggClassEst += classifierArr[i]['alpha'] * classEst
+        print(aggClassEst)
+    return sign(aggClassEst)
